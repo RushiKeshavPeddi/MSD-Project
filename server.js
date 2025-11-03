@@ -8,8 +8,9 @@ const PORT = process.env.PORT || 5000
 app.use(
   cors({
     origin: [
-      "https://cinebook-frontend.onrender.com", // Replace with your frontend Render URL
-      "http://localhost:5000/api", // For local development
+      "https://cinebook-frontend.onrender.com",
+      "http://localhost:3000",  // Fixed - removed /api
+      "http://localhost:5173",  // If using Vite
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
