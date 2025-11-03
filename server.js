@@ -9,7 +9,7 @@ app.use(
   cors({
     origin: [
       "https://cinebook-frontend.onrender.com", // Replace with your frontend Render URL
-      "http://localhost:3000", // For local development
+      "http://localhost:5000/api", // For local development
     ],
     credentials: true,
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
