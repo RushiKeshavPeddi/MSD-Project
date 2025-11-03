@@ -23,7 +23,7 @@ const CineBook = () => {
   const [citySearchTerm, setCitySearchTerm] = useState("")
   const [apiError, setApiError] = useState("")
 
-  const API_URL = "http://localhost:5000/api"
+  const API_URL = "https://msd-project-pmwx.onrender.com"
 
   const fetchCities = async (search = "") => {
     setLoading(true)
